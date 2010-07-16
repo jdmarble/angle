@@ -1,0 +1,33 @@
+name: angle
+version: 0.0.0.0
+description: Angle type
+
+license: BSD3
+license-file: LICENSE
+copyright: J.D. Marble
+maintainer: jmarble@cse.unr.edu
+
+cabal-version: >= 1.8
+build-type: Simple
+
+
+Library
+        hs-source-dirs: src
+        exposed-modules: Data.Angle
+        build-depends: base ==4.*
+                     , random ==1.0.*
+                     , spatialIndex ==0.0.*
+                     , vector-space ==0.7.*
+        ghc-options: -Wall
+
+Executable test
+        hs-source-dirs: test
+        main-is: TestMain.hs
+        build-depends: base ==4.*
+                     , random ==1.0.*
+                     , spatialIndex ==0.0.*
+                     , test-framework ==0.3.*
+                     , test-framework-th ==0.1.*
+                     , test-framework-quickcheck2 ==0.2.*
+                     , QuickCheck ==2.1.*
+                     , angle ==0.0.*
