@@ -28,6 +28,6 @@ Executable test
                      , spatialIndex ==0.0.*
                      , test-framework ==0.3.*
                      , test-framework-th ==0.1.*
-                     , test-framework-quickcheck2 >=0.2.8 && <0.3
-                     , QuickCheck ==2.3.*
+                     , test-framework-quickcheck2 >=0.2.9 && <0.3
+                     , QuickCheck ==2.4.*
                      , angle ==0.0.*
